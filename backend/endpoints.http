@@ -1,0 +1,62 @@
+### Consultar estudiantes
+GET http://127.0.0.1:8000/api/estudiantes
+
+### Crear un nuevo estudiante
+POST http://127.0.0.1:8000/api/estudiantes
+Content-Type: "application/json"
+
+{
+    "codigo": "12345",
+    "nombre": "Juan",
+    "email": "juan@test.com"
+}
+
+### Consultar un estudiante por código
+GET http://127.0.0.1:8000/api/estudiantes/{codigo}
+
+### Modificar un estudiante
+PUT http://127.0.0.1:8000/api/estudiantes/{codigo}
+Content-Type: "application/json"
+
+{
+    "codigo": "12345",
+    "nombre": "Juan",
+    "email": "juan@nuevoemail.com"
+}
+
+### Eliminar un estudiante
+DELETE http://127.0.0.1:8000/api/estudiantes/{codigo}
+
+---
+
+### Consultar notas de un estudiante
+GET http://127.0.0.1:8000/api/notas/{codigo}
+
+### Crear una nueva nota
+POST http://127.0.0.1:8000/api/notas/{codigo}
+Content-Type: "application/json"
+
+{
+    "actividad": "Examen Final",
+    "valor": 4.5
+}
+
+### Modificar una nota
+PUT http://127.0.0.1:8000/api/notas/{codigo}/{actividad}
+Content-Type: "application/json"
+
+{
+    "actividad": "Examen Final",
+    "valor": 5.0
+}
+
+### Eliminar una nota
+DELETE http://127.0.0.1:8000/api/notas/{codigo}/{actividad}
+
+---
+
+### Consultar resumen de estudiantes
+GET http://127.0.0.1:8000/api/resumen/estudiantes
+
+### Consultar resumen de notas
+GET http://127.0.0.1:8000/api/resumen/notas
