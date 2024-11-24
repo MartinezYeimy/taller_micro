@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background: #ff58d5;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0 0 10px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background: #fa88d4;
+    color: white;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: none;
+    background: #f576e4;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background: #f771da;
+  }
+  
+  #resumen-estudiantes, #resumen-notas {
+    margin-top: 15px;
+  }
+  

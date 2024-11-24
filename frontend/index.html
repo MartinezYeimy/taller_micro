@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Notas</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Notas de Estudiantes</h1>
+  </header>
+  
+  <main>
+    <section id="estudiantes">
+      <h2>Estudiantes</h2>
+      <button id="btn-add-estudiante">Añadir Estudiante</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>  
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Nota Definitiva</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="estudiantes-list">
+      
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <button class="ver-notas">Ver Notas</button>
+              <button class="eliminar-estudiante">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="resumen-estudiantes">
+        <p><strong>Resumen:</strong></p>
+        <p>Estudiantes aprobados: <span id="est-aprobados"></span></p>
+        <p>Estudiantes reprobados: <span id="est-reprobados"></span></p>
+        <p>Estudiantes sin notas: <span id="est-sin-notas"></span></p>
+      </div>
+    </section>
+
+    <section id="notas">
+      <h2>Notas del Estudiante</h2>
+      <div id="info-estudiante-seleccionado">
+        <p><strong>Estudiante:</strong> <span id="nombre-estudiante"></span></p>
+        <p><strong>Email:</strong> <span id="email-estudiante"></span></p>
+        <p><strong>Estado:</strong> <span id="estado-estudiante"></span></p>
+        <p><strong>Promedio:</strong> <span id="promedio-estudiante"></span></p>
+      </div>
+      <button id="btn-add-nota">Añadir Nota</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Actividad</th>
+            <th>Nota</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="notas-list">
+       
+          <tr>
+            <td></td>
+            <td class="nota"></td>
+            <td>
+              <button class="modificar-nota">Modificar</button>
+              <button class="eliminar-nota">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="resumen-notas">
+        <p><strong>Resumen:</strong></p>
+        <p>Notas menores a 3: <span id="notas-menores-3"></span></p>
+        <p>Notas mayores o iguales a 3: <span id="notas-mayores-3"></span></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/log.js"></script>
+</body>
+</html>
